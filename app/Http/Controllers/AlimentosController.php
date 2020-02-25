@@ -14,10 +14,7 @@ class AlimentosController extends Controller
 	 tipo 1 son bebidas
 	 tipo 2 son postres 
 	 */
-	public function __construct()
-	{
-		$this->middleware('auth');
-	}
+	
 
     public function platillos(request $r){
     	$alimentos = AlimentosModel::where('tipo',0)->get();
